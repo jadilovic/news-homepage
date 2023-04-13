@@ -24,21 +24,23 @@
 		<link rel="stylesheet" href="./style.css" />
 	</head>
 	<body>
-		<div class="container">
+		<div role="banner" class="container">
 			<nav>
-				<img src="./assets/images/logo.svg" class="logo" />
-				<ul>
+				<img src="./assets/images/logo.svg" alt="nav logo" class="logo" />
+				<div role="listbox" class="menu-list">
+					<ul>
+						<li>Home</li>
+						<li>New</li>
+						<li>Popular</li>
+						<li>Trending</li>
+						<li>Categories</li>
+					</ul>
 					<img
 						src="./assets/images/icon-menu-close.svg"
 						alt="close icon"
 						class="close-icon"
 					/>
-					<li>Home</li>
-					<li>New</li>
-					<li>Popular</li>
-					<li>Trending</li>
-					<li>Categories</li>
-				</ul>
+				</div>
 				<img
 					src="./assets/images/icon-menu.svg"
 					alt="burger menu"
@@ -46,7 +48,7 @@
 				/>
 			</nav>
 			<main>
-				<div class="intro">
+				<div role="banner" class="intro">
 					<img
 						width="1000"
 						src="./assets/images/image-web-3-desktop.jpg"
@@ -67,12 +69,12 @@
 				</div>
 				<aside>
 					<h2>New</h2>
-					<div class="aside-card">
+					<div role="contentinfo" class="aside-card">
 						<div class="aside-card-title">Hydrogen VS Electric Cars</div>
 						<p>Will hydrogen-fueled cars ever catch up to EVs?</p>
 					</div>
 					<div class="divider-line"></div>
-					<div class="aside-card">
+					<div role="contentinfo" class="aside-card">
 						<div class="aside-card-title">The Downsides of AI Artistry</div>
 						<p>
 							What are the possible adverse effects of on-demand AI image
@@ -80,7 +82,7 @@
 						</p>
 					</div>
 					<div class="divider-line"></div>
-					<div class="aside-card">
+					<div role="contentinfo" class="aside-card">
 						<div class="aside-card-title">Is VC Funding Drying Up?</div>
 						<p>
 							Private funding by VC firms is down 50% YOY. We take a look at
@@ -90,7 +92,7 @@
 				</aside>
 			</main>
 			<footer>
-				<div class="footer-card">
+				<div role="contentinfo" class="footer-card">
 					<img src="./assets/images/image-retro-pcs.jpg" alt="retro pc" />
 					<div class="footer-card-description">
 						<div class="number">01</div>
@@ -98,7 +100,7 @@
 						<p>What happens when old PCs are given modern upgrades?</p>
 					</div>
 				</div>
-				<div class="footer-card">
+				<div role="contentinfo" class="footer-card">
 					<img src="./assets/images/image-top-laptops.jpg" alt="top laptops" />
 					<div class="footer-card-description">
 						<div class="number">02</div>
@@ -106,7 +108,7 @@
 						<p>Our best picks for various needs and budgets.</p>
 					</div>
 				</div>
-				<div class="footer-card">
+				<div role="contentinfo" class="footer-card">
 					<img
 						src="./assets/images/image-gaming-growth.jpg"
 						alt="gaming growth pc"
@@ -118,7 +120,7 @@
 					</div>
 				</div>
 			</footer>
-			<div class="attribution">
+			<div role="link" class="attribution">
 				Challenge:
 				<a
 					href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl"
@@ -130,6 +132,7 @@
 				>.
 			</div>
 		</div>
+		<div role="status" id="overlay"></div>
 		<script src="./index.js"></script>
 	</body>
 </html>
